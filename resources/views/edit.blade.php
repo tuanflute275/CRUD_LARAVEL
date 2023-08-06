@@ -41,7 +41,7 @@
     </div>
     <div class="form-group col-md-6">
       <label for="inpPassword">Password</label>
-      <input type="text" name="password" class="form-control" id="inpPassword" placeholder="Enter password..." 
+      <input type="text" name="password" class="form-control" id="inpPassword" placeholder="Enter password..."
       value="{{old('password') ?? $userDetail->password}}">
        @error('password')
         <span class="text-danger">{{$message}}</span>

@@ -12,7 +12,7 @@ class UserController extends Controller
 {
     private $users;
     public function __construct(){
-       $this->users = new UserModel();
+        $this->users = new UserModel();
     }
 
     public function index(){
@@ -32,12 +32,12 @@ class UserController extends Controller
             'password' => 'required'
         ],
         [
-          'name.required' => 'Họ và tên bắt buộc phải nhập',
-          'name.min' => 'Họ và tên phải từ :min ký tự trở lên',
-          'email.required' => 'email bắt buộc phải nhập',
-          'email.email' => 'email không đúng định dạng',
-          'email.unique' => 'email đã tồn tại trong hệ thống',
-          'password.required' => 'password bắt buộc phải nhập',
+            'name.required' => 'Họ và tên bắt buộc phải nhập',
+            'name.min' => 'Họ và tên phải từ :min ký tự trở lên',
+            'email.required' => 'email bắt buộc phải nhập',
+            'email.email' => 'email không đúng định dạng',
+            'email.unique' => 'email đã tồn tại trong hệ thống',
+            'password.required' => 'password bắt buộc phải nhập',
         ]);
 
         $dataInsert = [
@@ -79,12 +79,12 @@ class UserController extends Controller
             'password' => 'required'
         ],
         [
-          'name.required' => 'Họ và tên bắt buộc phải nhập',
-          'name.min' => 'Họ và tên phải từ :min ký tự trở lên',
-          'email.required' => 'email bắt buộc phải nhập',
-          'email.email' => 'email không đúng định dạng',
-          'email.unique' => 'email đã tồn tại trong hệ thống',
-          'password.required' => 'password bắt buộc phải nhập',
+            'name.required' => 'Họ và tên bắt buộc phải nhập',
+            'name.min' => 'Họ và tên phải từ :min ký tự trở lên',
+            'email.required' => 'email bắt buộc phải nhập',
+            'email.email' => 'email không đúng định dạng',
+            'email.unique' => 'email đã tồn tại trong hệ thống',
+            'password.required' => 'password bắt buộc phải nhập',
         ]);
 
         $dataUpdate = [
